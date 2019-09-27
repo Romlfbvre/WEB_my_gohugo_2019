@@ -1,0 +1,55 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ville de Tours"
+theme = "my_gohugo-theme"
+themesDir = "./themes/"
+logoTitle = "OKOK"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Municipal Council"
+    url = "/Municipal-Council"
+    weight = 2
+[[menu.main]]
+    name = "Associations"
+    url = "/Associations"
+    weight = 3
+
+[[menu.main]]
+    identifier = "Events"
+    name = "Events"
+    url = "/Events/"
+    weight = "4"
+
+[[menu.main]]
+    parent = "Events"
+    name = "All Events"
+    url = "/Events/"
+    weight = "1"
+
+[[menu.main]]
+    parent = "Events"
+    name = "Archived Events"
+    url = "/Events/"
+    weight = "1"
+
+[[menu.main]]
+    parent = "Events"
+    name = "Upcoming Events"
+    url = "/Events/"
+    weight = "2"
+
+[[menu.main]]
+    parent = "Events"
+    name = "Calendar"
+    url = "/Calendar/"
+    weight = "3"
+
+[params]
+  adress = "1 à 3 rue des Minimes - 37926 TOURS CEDEX 9"
+  email = "Tours@tours.fr"
+  tel = "Tel : 02 47 21 60 00"
+  fax = "Fax : 02 47 21 69 36"

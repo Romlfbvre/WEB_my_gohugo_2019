@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ville de Tours</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Ville de Tours</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Sep 2018 15:32:54 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Search</title>
+      <link>http://example.org/search/index.json</link>
+      <pubDate>Tue, 04 Sep 2018 15:32:54 +0200</pubDate>
+      
+      <guid>http://example.org/search/index.json</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/calendar/calendar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/calendar/calendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/municipal-council/municipal-council/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/municipal-council/municipal-council/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resto du coeur</title>
+      <link>http://example.org/associations/associations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/associations/associations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

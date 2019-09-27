@@ -1,0 +1,62 @@
+<header>
+    <div class="container-fluid mt-2">
+        <div class="jumbotron bg-info shadow-lg p-2 mb-5 bg-info rounded">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h2 class="text-white text-center mb-4">SIDEBAR</h2>
+                    <form class="form-inline my-2 my-lg-0 ml-5">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light  border-info my-2 my-sm-0 text-info" type="submit">Search
+                        </button>
+                    </form>
+                    <h2 class="text-center mt-4 text-white mb-4">List of associations in the spotlight</h2>
+                    {{ range .Data.Pages }}
+                    {{ if eq .Type "Associations" }}
+                    {{ if eq .Params.Important "true" }}
+                            <h5 class="text-center text-white">{{ .Params.Title }}</h5>
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+
+                </div>
+                <div id="main">
+                    <span class="text-white display-4" onclick="openNav()">&#9776;</span>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "400px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+                <h4 class="text-white ml-5 mt-1 mr-4">Menu</h4>
+                <div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto text-dark">
+                        {{ range .Site.Menus.main }} {{ if not .HasChildren }}
+                        <li class="nav-item active text-dark">
+                            <a class="nav-link text-white" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ if .HasChildren }}
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle text-white" role="button" id="dropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ .Name }}</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                {{ range .Children }}
+                                <a class="dropdown-item text-dark" href="{{ .URL }}">{{ .Name }}</a>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

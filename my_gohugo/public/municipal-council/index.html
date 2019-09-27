@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/88237b7dcb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    
+    <link rel="stylesheet" href="http://example.org/css/bootstrap.min.css">
+    <title>Municipal-Councils</title>
+</head>
+<body class="bg-light">
+<header>
+    <div class="container-fluid mt-2">
+        <div class="jumbotron bg-info shadow-lg p-2 mb-5 bg-info rounded">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h2 class="text-white text-center mb-4">SIDEBAR</h2>
+                    <form class="form-inline my-2 my-lg-0 ml-5">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light  border-info my-2 my-sm-0 text-info" type="submit">Search
+                        </button>
+                    </form>
+                    <h2 class="text-center mt-4 text-white mb-4">List of associations in the spotlight</h2>
+                    
+                    
+                    
+
+                </div>
+                <div id="main">
+                    <span class="text-white display-4" onclick="openNav()">&#9776;</span>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "400px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+                <h4 class="text-white ml-5 mt-1 mr-4">Menu</h4>
+                <div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto text-dark">
+                         
+                        <li class="nav-item active text-dark">
+                            <a class="nav-link text-white" href="/">Home</a>
+                        </li>
+                        
+                        
+                         
+                        <li class="nav-item active text-dark">
+                            <a class="nav-link text-white" href="/municipal-council">Municipal Council</a>
+                        </li>
+                        
+                        
+                         
+                        <li class="nav-item active text-dark">
+                            <a class="nav-link text-white" href="/associations">Associations</a>
+                        </li>
+                        
+                        
+                         
+                        
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle text-white" role="button" id="dropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Events</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                
+                                <a class="dropdown-item text-dark" href="/allevents/">All Events</a>
+                                
+                                <a class="dropdown-item text-dark" href="/archivedevents/">Archived Events</a>
+                                
+                                <a class="dropdown-item text-dark" href="/upcomingevents/">Upcoming Events</a>
+                                
+                                <a class="dropdown-item text-dark" href="/calendar/">Calendar</a>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<h1 class="text-center text-dark display-1 mb-5">List of the municipal council</h1>
+<div class="row col-12 mb-2 ml-1">
+    
+    
+    <div class="col-4 card img-thumbnail">
+        <img src="https://pbs.twimg.com/profile_images/930369059807481856/CHuO-QxC_400x400.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center"> </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-center">Mayor</li>
+        </ul>
+    </div>
+    
+    
+</div>
+<footer class="page-footer bg-dark font-small blue-grey lighten-5 p-4 mt-4">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <ul class="well well-sm list-unstyled col-md-7 text-secondary">
+                    <h3 class="text-secondary mb-4"><strong>ADRESS</strong></h3>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-home mr-3"></i>1 à 3 rue des Minimes - 37926 TOURS CEDEX 9</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>Tours@tours.fr</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-phone mr-3"></i>Tel : 02 47 21 60 00</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-print mr-3"></i>Fax : 02 47 21 69 36</p>
+                    </li>
+                </ul>
+                <div class="col-md-5">
+                    <h4 class="text-secondary"><strong>CONTACT US</strong></h4>
+                    <form action="https://getform.io/f/e519833f-27d2-41ac-9e9d-d1c8abc8222e" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control border-info" value="" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control border-info" value=""
+                                   placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control border-info" name="telephone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-info" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control border-info" name="message" rows="3"
+                                      placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-outline-light  border-info my-2 my-sm-0 text-info" type="submit"
+                                name="button">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                        </button>
+                        <form/>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

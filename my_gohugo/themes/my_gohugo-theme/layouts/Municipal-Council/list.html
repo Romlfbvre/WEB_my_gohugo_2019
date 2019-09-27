@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body class="bg-light">
+{{ partial "header.html" . }}
+<h1 class="text-center text-dark display-1 mb-5">List of the municipal council</h1>
+<div class="row col-12 mb-2 ml-1">
+    {{ range .Data.Pages }}
+    {{ if eq .Type "Municipal-Council" }}
+    <div class="col-4 card img-thumbnail">
+        <img src="{{ .Params.Photo }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{ .Params.FirstNames }} {{ .Params.lastName }}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-center">{{ .Params.Role }}</li>
+        </ul>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+{{ partial "footer.html" . }}
+</body>
+</html>

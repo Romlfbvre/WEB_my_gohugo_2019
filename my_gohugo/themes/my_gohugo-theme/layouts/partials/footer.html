@@ -1,0 +1,53 @@
+<footer class="page-footer bg-dark font-small blue-grey lighten-5 p-4 mt-4">
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <ul class="well well-sm list-unstyled col-md-7 text-secondary">
+                    <h3 class="text-secondary mb-4"><strong>ADRESS</strong></h3>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-home mr-3"></i>{{ .Site.Params.adress }}</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>{{ .Site.Params.email }}</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-phone mr-3"></i>{{ .Site.Params.tel }}</p>
+                    </li>
+                    <li class="mb-4">
+                        <p>
+                            <i class="fas fa-print mr-3"></i>{{ .Site.Params.fax }}</p>
+                    </li>
+                </ul>
+                <div class="col-md-5">
+                    <h4 class="text-secondary"><strong>CONTACT US</strong></h4>
+                    <form action="https://getform.io/f/e519833f-27d2-41ac-9e9d-d1c8abc8222e" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control border-info" value="" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control border-info" value=""
+                                   placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control border-info" name="telephone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-info" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control border-info" name="message" rows="3"
+                                      placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-outline-light  border-info my-2 my-sm-0 text-info" type="submit"
+                                name="button">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
+                        </button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
